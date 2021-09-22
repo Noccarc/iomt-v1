@@ -1,5 +1,5 @@
 import './PatientList.css';
-import PatientData from 'components/PatientData/PatientData';
+import PatientDataNew from 'components/PatientData/PatientDataNew';
 
 const  data = {
     monitoringData: {
@@ -22,13 +22,9 @@ const PatientList = (props) => {
     return (
       <>
         <div>
-            this is the patient List page
             <div className='patient-list-box'>
-                <PatientData patientName="patient-1" data={data}/>
-                <PatientData patientName="patient-2" data={data}/>
-                <PatientData patientName="patient-3" data={data}/>
-                <PatientData patientName="patient-4" data={data}/>
-                <PatientData patientName="patient-5" data={data}/>
+                <PatientDataNew patientName="patient-1" data={data} critical={true}/>
+                <PatientDataNew patientName="patient-1" data={data} critical={false}/>
             </div>
         </div>
       </>

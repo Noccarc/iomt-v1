@@ -1,0 +1,52 @@
+/* .patient-data {
+    margin: 10px;
+    background-color: yellow;
+    max-height: 300px;
+    border: 1px solid black;
+} */
+
+/* card -header - data */
+/* --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%); */
+
+.patient-card {
+    padding: 20px;
+    /* width: 100%;  */
+    margin: 0.5em;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 30px 40px -20px hsl(229, 6%, 66%);
+    border-top: 3px solid hsl(212, 86%, 64%);
+    flex: 0;
+    /* background-color: red; */
+    
+}
+
+.patient-card-header {
+    font-weight: 400;
+    /* color: hsl(234, 12%, 34%); */
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #753BBD;
+}
+
+.patient-card-data {
+    margin: 10px;
+    /* background-color: yellow; */
+    max-height: 300px;
+    /* border: 1px solid black; */
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    display: block;
+    float: right;
+    /* Other styles here */
+}
+

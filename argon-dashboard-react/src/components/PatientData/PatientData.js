@@ -1,5 +1,6 @@
 import './PatientData.css';
 import PatientDataCard from './PatientDataCard';
+import PatientDataCardNew from './PatientDataCardNew';
 
 const PatientList = (props) => {
     
@@ -19,7 +20,8 @@ const PatientList = (props) => {
             </p>
 
             <div className="patient-data-container">
-                { props.data && props.data.monitoringData.pPip && <PatientDataCard name={'pPip'} value={props.data.monitoringData.pPip}/>}
+                { <PatientDataCardNew name={'P'}sub={'insp'} />}
+                { props.data && props.data.monitoringData.pPip && <PatientDataCard name={'P'} value={props.data.monitoringData.pPip}/>}
                 { props.data && props.data.monitoringData.pPeep && <PatientDataCard name={'pPeep'} value={props.data.monitoringData.pPeep}/>}
                 { props.data && props.data.monitoringData.pPlateau && <PatientDataCard name={'pPlateau'} value={props.data.monitoringData.pPlateau}/>}
                 { props.data && props.data.monitoringData.vTi && <PatientDataCard name={'vTi'} value={props.data.monitoringData.vTi}/>}

@@ -50,7 +50,7 @@ const Admin = (props) => {
 
   return (
     <SocketContext.Provider value={socket}>
-      <Sidebar
+      {/* <Sidebar
         {...props}
         routes={routes}
         logo={{
@@ -58,7 +58,7 @@ const Admin = (props) => {
           imgSrc: require("../assets/img/brand/nocca.png").default,
           imgAlt: "...",
         }}
-      />
+      /> */}
       <div className="main-content" ref={mainContent}>
         <Switch>
           {getRoutes(routes)}

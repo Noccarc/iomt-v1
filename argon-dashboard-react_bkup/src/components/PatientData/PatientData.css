@@ -1,0 +1,41 @@
+.patient {
+    margin: 1em;
+    /* background-color: grey; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 100%;
+}
+
+.patient-name {
+    text-align: left;
+    padding: 10px;
+    color: #753BBD;
+    font-size: 1.125em;
+    font-weight: 600;
+}
+.details-link {
+    float: right;
+    display: block;
+    color: #753BBD;
+    font-size: 1.125em;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: auto 0 0;
+    /* transition: color .45s ease; */
+}
+svg {
+    margin-left: .5em;
+    /* transition: transform .6s ease; */
+}
+
+.patient-data-container {
+    margin: 10px;
+    /* background-color: honeydew; */
+    /* max-height: 300px; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* flex-flow: row wrap; */
+    max-width: 100%;
+    justify-content: center;
+}

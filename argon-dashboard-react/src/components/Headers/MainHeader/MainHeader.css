@@ -1,0 +1,88 @@
+.top-header {
+    height: 60%;
+    background-color: #17395C;
+    /* position: fixed;
+    top: 0%; */
+    width: 100%;
+}
+
+.brand-img-container {
+    width: 13%;
+    padding: 20px;
+    float: left;
+    height: 100%;
+}
+
+.brand-img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    overflow: hidden;
+}
+
+.header-items {
+    float: right;
+    /* margin-right: 10px; */
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    width: 55%;
+    float: left;
+}
+
+.search-container input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance:none;
+}
+
+.searchBox {
+    border-radius: 29px;
+    background: #092C50 0% 0% no-repeat padding-box;
+    width: 100%;
+    height: auto;
+    padding: 5px 20px 5px 20px;
+    /* float: left; */
+    color: white;
+    /* border-bottom: 1px solid #fff !important; */
+    background: url("../../../assets/img/icons/common/search-lens.png") top right no-repeat;
+    background-position: 100% 50%;
+    background-origin: content-box;
+    background-size: 11% 70%;
+}
+
+.header-icons {
+    /* display: inline-block; */
+    width: 44%;
+    float: right;
+    padding: 1%;
+    height: 100%;
+}
+
+.header-icons img {
+    width: 13%;
+    height: 100%;
+    object-fit: scale-down;
+    overflow: hidden;
+}
+
+.top-header span {
+    cursor: pointer;
+}
+
+.attachment-icon-container {
+    /* width: 100px; */
+    padding-left: 15%;
+}
+
+.bell-icon-container {
+    /* width: 100px; */
+    padding-left: 15%;
+}
+
+.profile-icon-container {
+    /* width: 100px; */
+    padding-left: 15%;
+}

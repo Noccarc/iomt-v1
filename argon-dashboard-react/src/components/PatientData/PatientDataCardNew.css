@@ -1,0 +1,27 @@
+.patient-card {
+    background-color: #F2F2F2;
+    padding: 18px 33px 18px 33px;
+    border-radius: 9px;
+    text-align: center;
+    font-size: 16px;
+    margin: 20px 10px 20px 0px;
+    height: fit-content;
+    letter-spacing: 0px;
+    min-width: 9%;
+    flex: 2 1 auto; /* test */
+}
+
+.patient-card-name {
+    color: #707070;
+    font: normal normal 600 16px/21px Open Sans;
+}
+.patient-card-value {
+    color: #F37A20;
+    font-size: 30px;
+    font: normal normal normal 30px/40px Open Sans;
+}
+
+.patient-card-subName {
+    color: #B7B7B7;
+    font: normal normal normal 16px/21px Open Sans;
+}
