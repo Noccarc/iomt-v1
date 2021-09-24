@@ -57,21 +57,40 @@ const SubHeader = (props) => {
     }
 
     const handleMenuClick = () => {
-        const ele = document.getElementById('menu-content');
+        const ele = document.getElementById('menu-container');
+        
+        if (isMenuContentActive == false) {
+            ele.style["border-bottom"] = "2px solid #F2F2F2";
+            ele.style["border-radius"] = "0px 30px 0px 0px";
+            ele.style["box-shadow"] = "2px 0px 6px #00000029";
+            // ele.style["color"] = "white";
+        } else {
+            ele.style["border"] = "";
+            ele.style["border-radius"] = "";
+            ele.style["box-shadow"] = "";
+        }
         setIsMenuContentActive(!isMenuContentActive);
         // alert('clicked');
     }
 
     return (
         <div className="sub-header">
-            <div className="menu-container"  onClick={()=> handleMenuClick()}>
+            <div className="menu-container" id="menu-container" onClick={()=> handleMenuClick()}>
                 <span className="menu-icon-container" >
-                {!isMenuContentActive && <img  className="menu-icon" src={menuIcon}/>}
-                {isMenuContentActive && <img  className="menu-icon" src={CrossIcon}/>}
+                    {!isMenuContentActive && <img  className="menu-icon" src={menuIcon}/>}
+                    {isMenuContentActive && <img  className="menu-icon" src={CrossIcon}/>}
                 </span>
                 <span className="menu-text"> Menu</span>
                 {isMenuContentActive && <div className="menu-content" id="menu-content">
-                    test
+                    <ul>
+                        <li className="menu-list-item">Staff Assignment</li>
+                        <li className="menu-list-item">Analytics</li>
+                        <li className="menu-list-item">SOPs</li>
+                        <li className="menu-list-item">Import Data</li>
+                        <li className="menu-list-item">Resources</li>
+                        <li className="menu-list-item">Settings</li>
+                    </ul>
+                    <div className="menu-contact-item">Contact Admin</div>
                 </div>}
             </div>
             <div className="filter-container">

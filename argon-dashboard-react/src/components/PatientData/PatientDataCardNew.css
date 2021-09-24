@@ -17,11 +17,14 @@
 }
 .patient-card-value {
     color: #F37A20;
-    font-size: 30px;
     font: normal normal normal 30px/40px Open Sans;
 }
 
 .patient-card-subName {
     color: #B7B7B7;
     font: normal normal normal 16px/21px Open Sans;
+}
+
+.sub {
+    z-index: 0;
 }

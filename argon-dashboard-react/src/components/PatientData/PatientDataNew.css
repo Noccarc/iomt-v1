@@ -1,38 +1,30 @@
 .patient-data {
-    /* background-color: blanchedalmond; */
     height: 10%;
     margin-bottom: 15px;
-    /* display: flex; */
 }
 
 .patient-data-upper-bar {
-
     background-color: #F37A20;
     width: 20%;
     border-top-left-radius: 12px;
     border-top-right-radius: 40% 100%;
-    /* text-align: center; */
     padding: 10px 60px 12px 0px;
     padding-left: 2%;
     color: white;
     opacity: 1;
     margin: 0 0 -10px 0;
-    /* border: 
-    padding: 10px; */
 }
 
 .patient-data-container {
     display: flex;
     background-color: #FFFFFF;
     border-radius: 12px;
-    /* flex-grow: 0; */
     justify-content: center;
     align-items: center;
-    /* width: 70%; */
-    /* align-items: flex-end; */
-    /* flex-shrink: 0; */
-    /* flex-basis: 25em; */
-    /* float: left; */
+    width: 91%;
+    float: left;
+    z-index: 2;
+    cursor: pointer;
 }
 
 .patient-info {
@@ -78,19 +70,111 @@
     display: flex;
     flex-grow: 0;
 }
+
 .patient-calling {
     box-shadow: 0px 3px 6px #0000000D;
     border: 2px solid #17395C;
     border-radius: 0px 12px 12px 0px;
     width: 10%;
-    background-color: red;
-    /* display: inline-block; */
-    margin-left: 20px;
-    /* z-index: -1; */
-    /* position: relative; */
-    float: right;
+    display: inline-block;
+    margin-left: -10px;
+    z-index: -1;
+    cursor: pointer;
+    display: block;
+    z-index: 0;
 }
 
-.video-icon {
-    background-image: url("./icons8-video-call-50.png");
+.video-icon-container {
+    text-align: center;
+    height: 80%;
 }
+
+.video-icon-container .video-icon {
+    width: 60%;
+    padding-top: 25%;
+}
+
+@media (min-width: 1450px)  {
+    .video-icon-container img {
+        width: 40%;
+        /* padding-top: 14%; */
+    }
+}
+
+@media only screen and (max-device-width: 850px) {
+    .video-icon-container img {
+        width: 60%;
+        padding-top: 50%;
+    }
+}
+
+.more-text-container {
+    text-align: center;
+    background-color: #17395C;
+    padding: 5%;
+    color: white;
+    height: 20%;
+    border-bottom-right-radius: 9px;
+    font: normal normal normal 16px/21px Open Sans;
+    letter-spacing: 0px;
+    cursor: pointer;
+}
+
+.right-dir-icon {
+    margin-left: 20%;
+}
+
+.test-div {
+    display: flex;
+}
+
+.more-items-container {
+    width: 16%;
+    right: 1%;
+    margin-top: 1%;
+    background-color: #FFFFFF;
+    opacity: 1;
+    letter-spacing: 0px;
+    color: #B7B7B7;
+    float: right;
+    position: absolute;
+    z-index: 100;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px #0000001A;
+}
+
+.more-items-container ul {
+    margin: 0;
+    padding: 10px 20px 0px 20px;
+	width: 100%;
+	list-style: none;
+	display: inline-table;
+}
+
+.more-items-container ul li {
+    display: block;
+	text-align: left;
+    padding: 10px;
+    font: normal normal normal 16px/24px Open Sans;
+    color: #B7B7B7;
+    border-bottom: 1px solid rgb(183,183,183, 0.15);
+    cursor: pointer;
+}
+
+.more-items-container ul li:hover {
+    background-color: #17395C;
+}
+
+.more-items-container ul li:last-child {
+    border-bottom: 0;
+}
+
+.flag-container {
+    position: absolute;
+    right: 1%;
+}
+
+.empty-flag-icon, .solid-flag-icon {
+    width: 40%;
+}
+

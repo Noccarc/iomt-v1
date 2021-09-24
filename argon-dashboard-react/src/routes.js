@@ -1,4 +1,5 @@
 import HomePage from "views/HomePage/HomePage.js";
+import GraphPage from "views/GraphPage/GraphPage.js";
 import Profile from "views/examples/Profile.js";
 import Maps from "views/examples/Maps.js";
 import Register from "views/examples/Register.js";
@@ -9,11 +10,20 @@ import Icons from "views/examples/Icons.js";
 var routes = [
   {
     path: "/index",
-    name: "Dashboard",
+    name: "HomePage",
     icon: "ni ni-tv-2 text-primary",
     component: HomePage,
     layout: "/admin",
   },
+
+  {
+    path: "/home",
+    name: "Dashboard",
+    icon: "ni ni-tv-2 text-primary",
+    component: GraphPage,
+    layout: "/admin",
+  },
+
   // {
   //   path: "/icons",
   //   name: "Icons",
