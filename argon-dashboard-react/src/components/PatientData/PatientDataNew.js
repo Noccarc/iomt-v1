@@ -63,9 +63,9 @@ const PatientDataNew = (props, context) => {
                         { <PatientDataCardNew name={'P'} nameSub={'plateau'} baseText="cmH2O" value={monitoringData.pPlateau} />}
                         { <PatientDataCardNew name={'V'} nameSub={'ti'} sub={'insp'} baseText="cmH2O" value={monitoringData.vTi} />}
                         { <PatientDataCardNew name={'V'} nameSub={'te'} sub={'insp'} baseText="cmH2O" value={monitoringData.vTe} />}
-                        { <PatientDataCardNew name={'fio2'} nameSub={''} sub={'insp'} baseText="cmH2O" value={monitoringData.fio2} />}
-                        { <PatientDataCardNew name={'rr'} nameSub={''} sub={'insp'} baseText="cmH2O" value={monitoringData.rr} />}
-                        { <PatientDataCardNew name={'ie'} nameSub={''} sub={'insp'} baseText="cmH2O" value={monitoringData.ie} />}
+                        { <PatientDataCardNew name={'FiO2'} nameSub={''} sub={'insp'} baseText="cmH2O" value={monitoringData.fio2} />}
+                        { <PatientDataCardNew name={'RR'} nameSub={''} sub={'insp'} baseText="cmH2O" value={monitoringData.rr} />}
+                        { <PatientDataCardNew name={'I:E'} nameSub={''} sub={'insp'} baseText="cmH2O" value={monitoringData.ie} />}
                     </div>
                     <div className="patient-calling" onClick={() => console.log('patient-calling clicked')}>
                         <div className="video-icon-container" >

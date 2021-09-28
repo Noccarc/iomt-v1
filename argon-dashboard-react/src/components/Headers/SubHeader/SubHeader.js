@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from "react-router-dom";
 
 import "./SubHeader.css";
 
@@ -10,7 +11,7 @@ import Select from 'react-select';
 
 const SubHeader = (props) => {
     const [isMenuContentActive, setIsMenuContentActive] = useState(false);
-
+    const history = useHistory();
     const actions = [
         { label: "ICU 01 - Darshan Hospital", value: 1 },
         { label: "ICU 02 - Darshan Hospital", value: 2 },
@@ -73,6 +74,10 @@ const SubHeader = (props) => {
         // alert('clicked');
     }
 
+    const handleBackClick = () => {
+        history.goBack();
+    }
+
     return (
         <div className="sub-header">
             <div className="menu-container" id="menu-container" onClick={()=> handleMenuClick()}>
@@ -93,7 +98,7 @@ const SubHeader = (props) => {
                     <div className="menu-contact-item">Contact Admin</div>
                 </div>}
             </div>
-            <div className="filter-container">
+            {props.headerConfig && props.headerConfig.showFilterContainer && <div className="filter-container">
                 <span className="dropdown">
                     <Select options={ actions } styles={customStyles} label="Single select"/>
                 </span>
@@ -103,7 +108,15 @@ const SubHeader = (props) => {
                 <span className="lock-icon-container">
                     <img  className="lock-icon" src={LockIcon} />
                 </span>
-            </div>
+            </div>}
+            {props.headerConfig && props.headerConfig.showBedDetails && <div className="bed-details-container">
+                <div className="bed-details">
+                    Bed No : <span>{props.patientDetails && props.patientDetails.bedNumber}</span>
+                </div>
+                <div className="back-button-container">
+                    <button className="back-button" onClick={() => {handleBackClick()}}>BACK</button>
+                </div>
+            </div>}
         </div>
     );
   };

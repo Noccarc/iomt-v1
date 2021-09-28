@@ -2,6 +2,7 @@
     background-color: #FFFFFF;
     width: 100%;
     height: 40%;
+    box-shadow: 0px 3px 6px #00000029;
 }
 
 .menu-container {
@@ -27,7 +28,7 @@
 }
 
 .menu-text {
-    margin-left: 1em;
+    /* margin-left: 1em; */
     font: normal normal 600 22px/30px Open Sans;
     letter-spacing: 0px;
     color: #17395C;
@@ -46,10 +47,12 @@
 
 .filter-icon-container {
     padding-left: 14%;
+    cursor: pointer;
 }
 
 .lock-icon-container {
     padding-left: 9%;
+    cursor: pointer;
 }
 
 .lock-icon, .filter-icon, .menu-icon {
@@ -58,6 +61,7 @@
 
 .dropdown {
     width: 60%;
+    cursor: pointer;
 }
 
 .menu-content {
@@ -119,4 +123,38 @@
     .menu-content .menu-contact-item {
         top: 46%;
     }
+}
+
+.bed-details-container {
+    float: right;
+    width: 55%;
+    height: 100%;
+    display: flex;
+    padding: 0 20px 0 20px;
+    list-style-type:none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bed-details {
+    font: normal normal normal 300 16px/20px Open Sans;
+    letter-spacing: 0px;
+    color: #F37A20;
+}
+
+.bed-details span {
+    font: normal normal normal 400 16px/20px Open Sans;
+}
+
+.back-button {
+    background: #F37A20 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 7px 25px 7px 25px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font: normal normal normal 350 16px/20px Open Sans;
 }
