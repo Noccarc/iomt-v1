@@ -1,5 +1,3 @@
-import moment from "moment";
-
 import "./MainHeader.css";
 import imgsrc from "../../../assets/img/brand/nocca-white.png";
 import bellIcon from "../../../assets/img/icons/common/bell.png";
@@ -16,7 +14,7 @@ const HeaderNew = (props) => {
 
             {props.headerConfig.logo && <div className="brand-img-container">
                 <span>
-                    <img className="brand-img" src={imgsrc} />
+                    <img className="brand-img" src={imgsrc} alt="brand icon"/>
                 </span>
             </div>}
             {props.headerConfig.showHeaderItems && <div className="header-items">
@@ -25,13 +23,13 @@ const HeaderNew = (props) => {
                 </div>
                 <div className="header-icons">
                     <span className="attachment-icon-container">
-                        <img  className="attachment-icon" src={attachmentIcon} />
+                        <img  className="attachment-icon" src={attachmentIcon} alt="attachment icon"/>
                     </span>
                     <span className="bell-icon-container">
-                        <img  className="attachment-icon" src={bellIcon} />
+                        <img  className="attachment-icon" src={bellIcon} alt="bell icon"/>
                     </span>
                     <span className="profile-icon-container">
-                        <img  className="attachment-icon" src={profileIcon} />
+                        <img  className="attachment-icon" src={profileIcon} alt="profile icon"/>
                     </span>
                 </div>
             </div>}

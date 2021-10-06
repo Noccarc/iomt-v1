@@ -1,7 +1,6 @@
 import "./GraphPage.css";
 
-import { useState, useEffect, useContext } from "react";
-import {SocketContext} from '../../context/socket';
+import { useState, useEffect } from "react";
 import PubSub from 'pubsub-js';
 import moment from "moment";
 
@@ -11,7 +10,7 @@ import RealtimeLineChart from "../../components/Graph/ChartViewer";
 import {paramList, additionalParamList, HeaderConfig} from "../../constants/ParamConstants";
 
 const GraphPage = (props) => {
-    const [token, setToken] = useState(null);
+    // const [token, setToken] = useState(null);
     const [patientId, setPatientId] = useState(null);
     const [dataList, setDataList] = useState([]);
     const [data, setData] = useState(null);
@@ -37,7 +36,7 @@ const GraphPage = (props) => {
         };
 
         let tempToken = PubSub.subscribe(patientId, handleData);
-        setToken(tempToken);
+        // setToken(tempToken);
         
         console.log('subscribed graph tokenId: ' + tempToken);
         return function cleanup() {
@@ -59,10 +58,10 @@ const GraphPage = (props) => {
                         headerConfig={HeaderConfig.GraphPage && HeaderConfig.GraphPage.mainHeader} 
                         patientDetails= {
                             {
-                                patientName: data && data.patientName || 'XXXXX XXXXX',
-                                patientId: data && data.patientId || 'XX-XX',
-                                date: moment(new Date).format("DD-MM-YYYY"),
-                                time: moment(new Date).format("HH:mm")
+                                patientName: (data && data.patientName) || 'XXXXX XXXXX',
+                                patientId: (data && data.patientId) || 'XX-XX',
+                                date: moment(new Date()).format("DD-MM-YYYY"),
+                                time: moment(new Date()).format("HH:mm")
                             }
                         }
                     />
@@ -125,7 +124,7 @@ const GraphPage = (props) => {
                                                 </div>
                                             </div>
                                             <div className="param-value">
-                                                {data && data.monitoringData && data.monitoringData[`${param.paramName}`] || 'XX'}
+                                                {(data && data.monitoringData && data.monitoringData[`${param.paramName}`]) || 'XX'}
                                             </div>
                                         </div>)
                             }
@@ -144,7 +143,7 @@ const GraphPage = (props) => {
                                             </div>
                                         </div>
                                         <div className="param-value">
-                                            {data && data.monitoringData && data.monitoringData[`${param.paramName}`] || 'XX'}
+                                            {(data && data.monitoringData && data.monitoringData[`${param.paramName}`]) || 'XX'}
                                         </div>
                                     </div>)
                             }

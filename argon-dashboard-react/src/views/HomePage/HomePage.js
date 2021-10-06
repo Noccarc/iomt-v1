@@ -1,6 +1,6 @@
 import "./HomePage.css";
 
-import { useState, useEffect, useContext, React, useRef, createRef, componentDidMount, componentWillUnmount } from "react";
+import { useState, useEffect, React} from "react";
 import PubSub from 'pubsub-js';
 
 import PatientList from "../PatientList/PatientList";
@@ -14,7 +14,6 @@ const HomePage = (props) => {
 
     const [data, setData] = useState();
     const [token, setToken] = useState();
-    const tokenRef = useRef(() => {});
 
     useEffect(() => {
         let tempToken = PubSub.subscribe('monitoring_data', handleData);

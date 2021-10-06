@@ -1,4 +1,3 @@
-import Icons from 'views/examples/Icons';
 import './PatientDataCardNew.css';
 
 const PatientDataCardNew = (props) => {

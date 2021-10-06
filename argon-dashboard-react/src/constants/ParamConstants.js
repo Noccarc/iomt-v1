@@ -192,37 +192,34 @@ export const additionalParamList = [
 ]
 
 export const HeaderConfig = {
-        HomePage: {
-            mainHeader: {
-                logo: true,
-                showHeaderItems: true,
-                headerDetails: {
-                    searchBar: true,
-                    attachmentsIcon: true,
-                    bellIcon: true,
-                    profileIcon: true
-                },
-                showPatientDetails: false
+    HomePage: {
+        mainHeader: {
+            logo: true,
+            showHeaderItems: true,
+            headerDetails: {
+                searchBar: true,
+                attachmentsIcon: true,
+                bellIcon: true,
+                profileIcon: true
             },
-            subHeader: {
-                menu: true,
-                showFilterContainer: true,
-                showBedDetails: false,
-            }
+            showPatientDetails: false
         },
-        GraphPage: {
-            mainHeader: {
-                logo: true,
-                showHeaderItems: false,
-                showPatientDetails: true
-            },
-            subHeader: {
-                menu: true,
-                showFilterContainer: false,
-                showBedDetails: true,
-                // dropdown: false,
-                // filterIcon: false,
-                // lockIcon: false,
-            }
+        subHeader: {
+            menu: true,
+            showFilterContainer: true,
+            showBedDetails: false,
         }
+    },
+    GraphPage: {
+        mainHeader: {
+            logo: true,
+            showHeaderItems: false,
+            showPatientDetails: true
+        },
+        subHeader: {
+            menu: true,
+            showFilterContainer: false,
+            showBedDetails: true
+        }
+    }
 }

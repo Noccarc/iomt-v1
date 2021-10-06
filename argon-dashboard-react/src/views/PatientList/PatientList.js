@@ -62,6 +62,7 @@ import PatientDataNew from 'components/PatientData/PatientDataNew';
 // }
 
 const handlePatientRendering = (data) => {
+    console.log("data in patient list:: " + JSON.stringify(data));
     if (data && data.patientList) {
         return data.patientList.map((patient) => {
             return <PatientDataNew patientData={patient} key={patient.patientId}/>

@@ -60,7 +60,7 @@ const SubHeader = (props) => {
     const handleMenuClick = () => {
         const ele = document.getElementById('menu-container');
         
-        if (isMenuContentActive == false) {
+        if (isMenuContentActive === false) {
             ele.style["border-bottom"] = "2px solid #F2F2F2";
             ele.style["border-radius"] = "0px 30px 0px 0px";
             ele.style["box-shadow"] = "2px 0px 6px #00000029";
@@ -82,8 +82,8 @@ const SubHeader = (props) => {
         <div className="sub-header">
             <div className="menu-container" id="menu-container" onClick={()=> handleMenuClick()}>
                 <span className="menu-icon-container" >
-                    {!isMenuContentActive && <img  className="menu-icon" src={menuIcon}/>}
-                    {isMenuContentActive && <img  className="menu-icon" src={CrossIcon}/>}
+                    {!isMenuContentActive && <img  className="menu-icon" src={menuIcon} alt="menu icon"/>}
+                    {isMenuContentActive && <img  className="menu-icon" src={CrossIcon} alt="cross icon"/>}
                 </span>
                 <span className="menu-text"> Menu</span>
                 {isMenuContentActive && <div className="menu-content" id="menu-content">
@@ -103,10 +103,10 @@ const SubHeader = (props) => {
                     <Select options={ actions } styles={customStyles} label="Single select"/>
                 </span>
                 <span className="filter-icon-container">
-                    <img  className="filter-icon" src={FilterIcon} />
+                    <img  className="filter-icon" src={FilterIcon} alt="filter icon"/>
                 </span>
                 <span className="lock-icon-container">
-                    <img  className="lock-icon" src={LockIcon} />
+                    <img  className="lock-icon" src={LockIcon} alt="lock icon"/>
                 </span>
             </div>}
             {props.headerConfig && props.headerConfig.showBedDetails && <div className="bed-details-container">
