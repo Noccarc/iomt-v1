@@ -1,0 +1,29 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.headers {
+    top: 0%;
+    position: fixed;
+    width: 100%;
+    height: 14%;
+    z-index: 1000;
+}
+
+/* For mobile phones: 
+    ,
+            screen and (min-device-width: 600px)
+*/
+@media only screen and (max-device-width: 768px)
+                    and (max-device-height : 812px) {
+    .headers {
+        height: 7%;
+    }
+}
+  
+/* @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    
+/* } */

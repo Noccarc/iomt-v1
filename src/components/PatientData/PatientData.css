@@ -1,0 +1,34 @@
+/* .patient {
+    margin: 1em;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 100%;
+}
+
+.patient-name {
+    text-align: left;
+    padding: 10px;
+    color: #753BBD;
+    font-size: 1.125em;
+    font-weight: 600;
+}
+.details-link {
+    float: right;
+    display: block;
+    color: #753BBD;
+    font-size: 1.125em;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: auto 0 0;
+}
+svg {
+    margin-left: .5em;
+}
+
+.patient-data-container {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: center;
+} */
